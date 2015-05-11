@@ -1,0 +1,208 @@
+@font-face {
+	font-family: 'Fixedsys';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Fixedsys Excelsior 3.01'), url('/static/fonts/FSEX300.woff') format('woff');
+}
+
+@font-face {
+	font-family:"C64";
+	src: 
+		url("/static/fonts/C64_Pro-STYLE.eot") format("eot"), 
+		url("/static/fonts/C64_Pro-STYLE.woff") format("woff"),
+		url("/static/fonts/C64_Pro-STYLE.ttf") format("truetype"),
+		url("/static/fonts/C64_Pro-STYLE.svg") format("svg");
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	background: #A5A5FF;
+}
+
+.bezel {
+	width: 100%;
+	min-height: 100%;
+}
+
+.border {
+	font-family: 'Fixedsys', monospace;
+	font-size: 20pt;
+	background: #A5A5FF;
+	width: 100%;
+	min-height: 100%;
+
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.content {
+	background: #4242E7;
+	color: #A5A5FF;
+	width: 100%;
+	min-height: 100%;
+}
+
+.content h1 {
+	display: block;
+	font-size: 20pt;
+	padding-top: 2ex;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.content h1:before {
+	content: '* ';
+}
+
+.content h1:after {
+	content: ' *';
+}
+
+.content p {
+	text-align: left;
+	margin-top: 0;
+	line-height: 100%;
+	position: relative;
+	margin-bottom: 0;
+	padding-bottom: 0.6cm;
+}
+
+.content p a {
+	color: #FFC083;
+	text-decoration: none;
+}
+
+.content p a.seperate {
+	display: block;
+	position: relative;
+	float: left;
+}
+
+.content p a:hover:after {
+	content: " ";
+	display: block;
+	width: 0.5em;
+	height: 2ex;
+	background: none repeat scroll 0% 0% #A5A5FF;
+	float: right;
+	position: relative;
+	top: 3px;
+	animation: blinky 0.8s;
+	animation-iteration-count: infinite;
+	-webkit-animation: blinky 0.8s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes blinky {
+	0% { background-color: #FFC083; }
+	49% { background-color: #FFC083; }
+	50% { background-color: #4242E7; }
+	100% { background-color: #4242E7; }
+}
+
+@-webkit-keyframes blinky {
+	0% { background-color: #FFC083; }
+	49% { background-color: #FFC083; }
+	50% { background-color: #4242E7; }
+	100% { background-color: #4242E7; }
+}
+
+label {
+	display: block;
+}
+
+input {
+	display: block;
+}
+
+.language {
+	display: none;
+}
+
+.label {
+	display: inline;
+}
+
+.credits {
+	position: fixed;
+	bottom: 0;
+	left: 0; right: 0;
+	width: 100%;
+	text-align: center;
+	font-family: 'Fixedsys';
+	color: yellow;
+}
+
+.credits a {
+	color: red;
+}
+
+@media (min-width: 480px) {
+	.content h1:before {
+		content: '**** ';
+	}
+
+	.content h1:after {
+		content: ' ****';
+	}
+}
+
+@media (min-width: 800px) {
+	.border {
+		width: 30em;
+		height: 40ex;
+		min-height: 0;
+		margin: auto;
+	}
+
+	.label {
+		display: block;
+	}
+
+	label {
+		display: inline;
+	}
+
+	.language {
+		display: inline;
+	}
+
+	input {
+		display: block;
+		background: #4242E7;
+		border: none;
+		padding: 8px;
+		margin: 8px;
+		border: solid 1px #FFC083;
+		color: #FFC083;
+	}
+
+	.content {
+		width: 30em;
+		min-height: 40ex;
+		margin: auto;
+	}
+}
+
+@media (min-width: 960px) {
+	body {
+		background: black;
+	}
+
+	.border {			
+		padding: 2cm;	
+	}
+}
+
+
+.lebal {
+	display: none;
+}
+
+.lebal + input {
+	display: none;
+}

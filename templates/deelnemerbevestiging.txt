@@ -1,0 +1,6 @@
+Hi {% voornaam %} {% tussenvoegsel %} {% achternaam %},
+
+You've registered for the crash and compile on the 13th of may.
+
+Kind regards,
+LANcee.
