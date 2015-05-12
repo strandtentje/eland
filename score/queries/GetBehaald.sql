@@ -1,6 +1,6 @@
 SELECT 
     Prestatie.id id,
-    COUNT(TeamBehaald.id) aantal
+    SUM(TeamBehaald.waarde) aantal
 FROM Prestatie LEFT JOIN (
     SELECT
         *
