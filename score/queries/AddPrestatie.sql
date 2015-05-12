@@ -1,0 +1,1 @@
+INSERT INTO Prestatie(naam) VALUES (@naam);

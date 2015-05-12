@@ -1,5 +1,5 @@
 SELECT 
-    Prestatie.id id,
+    Prestatie.id prestatie,
     SUM(TeamBehaald.waarde) aantal
 FROM Prestatie LEFT JOIN (
     SELECT

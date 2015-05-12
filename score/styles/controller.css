@@ -1,0 +1,13 @@
+body { font-family: sans-serif; }
+
+h1, h2, h3 { font-family: serif; }
+
+table, table td, table tr {
+	border: solid 1px gray;
+	border-spacing: 1px;
+	font-size: 12pt;
+}
+
+table td {
+	padding: 3px;
+}

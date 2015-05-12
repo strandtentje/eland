@@ -1,4 +1,4 @@
 SELECT
-	id, naam, max
+	id as prestatie, naam, slug, max
 FROM
 	Prestatie;
