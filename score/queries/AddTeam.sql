@@ -1,1 +1,1 @@
-INSERT INTO Team(naam, slug) Values(@naam, @slug);
+INSERT INTO Team(naam) Values(@naam);

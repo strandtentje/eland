@@ -7,7 +7,7 @@ FROM Prestatie LEFT JOIN (
     FROM
         Behaald
     WHERE
-        Behaald.team = @team) TeamBehaald ON
+        Behaald.team = @team AND Behaald.obsolete IS NULL) TeamBehaald ON
     TeamBehaald.prestatie = Prestatie.id
 GROUP BY
     Prestatie.id;

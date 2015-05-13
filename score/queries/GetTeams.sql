@@ -1,16 +1,20 @@
 SET @rank=0;
 SELECT 
 	@rank:=@rank+1 AS rank, 
-	teams.*
+	totaal.team team,
+	totaal.naam naam,
+	totaal.waarde totaal
 FROM
 	(SELECT
-	    Behaald.team team,
+	    Team.id team,
 	    Team.naam naam,
-		SUM(Behaald.waarde) totaal
+	    SUM(IFNULL(Behaald.waarde, 0)) waarde
 	FROM
-		Behaald JOIN Team ON
+	    Behaald RIGHT JOIN Team ON
 	    Behaald.team = Team.id
+	WHERE
+		Team.obsolete IS NULL
 	GROUP BY
-	    Behaald.team
+	    Team.id
 	ORDER BY
-	    SUM(Behaald.waarde) DESC) teams;
+	    SUM(Behaald.waarde) DESC) totaal;

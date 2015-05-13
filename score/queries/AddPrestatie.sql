@@ -1,1 +1,1 @@
-INSERT INTO Prestatie(naam) VALUES (@naam);
+INSERT INTO Prestatie(naam, slug) VALUES (@naam, @slug);
