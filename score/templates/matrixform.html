@@ -4,7 +4,9 @@
 		<label for="naam">Naam</label>
 		<input type="text" name="naam">
 		<label for="slug">URL slug</label>
-		<input type="text" name="slug">
+		<select name="slug">
+			{% slugs %}
+		</select>
 		<input type="submit" value="nieuwe prestatie maken">
 	</form>
 </div>

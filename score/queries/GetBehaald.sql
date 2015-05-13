@@ -9,5 +9,7 @@ FROM Prestatie LEFT JOIN (
     WHERE
         Behaald.team = @team AND Behaald.obsolete IS NULL) TeamBehaald ON
     TeamBehaald.prestatie = Prestatie.id
+WHERE 
+    Prestatie.obsolete IS NULL
 GROUP BY
     Prestatie.id;

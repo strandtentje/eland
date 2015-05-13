@@ -13,7 +13,7 @@ FROM
 	    Behaald RIGHT JOIN Team ON
 	    Behaald.team = Team.id
 	WHERE
-		Team.obsolete IS NULL
+		Team.obsolete IS NULL AND Behaald.obsolete IS NULL
 	GROUP BY
 	    Team.id
 	ORDER BY
