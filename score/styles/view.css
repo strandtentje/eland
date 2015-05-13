@@ -1,13 +1,22 @@
-body { font-family: sans-serif; }
+body { 
+	font-family: sans-serif;
+	background-color: black;
+	color: white; 
+}
 
 h1, h2, h3 { font-family: serif; }
 
 table, table td, table tr {
-	border: solid 2px black;
+	border: solid 2px gray;
 	border-spacing: 0;
 	font-size: 20pt;
 }
 
 table td {
 	padding: 5px;
+}
+
+center img {
+	padding: 10px;
+	height: 80px;
 }

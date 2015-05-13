@@ -47,3 +47,13 @@ div.group {
 div.group h2 {
 	margin-top: 0;
 }
+
+center {
+	background: black;
+	clear: both;
+}
+
+center img {
+	padding: 10px;
+	height: 80px;
+}
