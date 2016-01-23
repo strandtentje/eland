@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Crash and Compile</title>
+		<title>Crash and Comrade</title>
 		<meta name="viewport" content="initial-scale=1">
 		<style type="text/css">
 			{% style %}
 		</style>
 	</head>
 	<body>
-		<div id="logos">
+		<div id="header">
+			<a href="/"><img src="/static/img/placeholder_logo.png" alt="Crash and Comrade"></a>
+			<a href="/register">Parttake</a>
+			<a href="/score">Score</a>
+		</div>
+		<div id="sponsors">
 			<img src="../static/img/quintor.png"></img>
 			<img src="../static/img/cover_logo.png"></img>
 		</div>
-		
-		<div class="bezel">
-			<div class="border">
-				<div class="content">
-					{% content %}
-				</div>
-			</div>
+		<div id="content">
+			{% content %}
 		</div>
-
-		<div class="credits">
-			C64 C&amp;C signup in <a href="http://github.com/strandtentje/apollogeese">ag</a> by <a href="http://www.borreh.nl">rob</a>
+		<div id="credits">
+			by <a href="http://www.borreh.nl">president Borbachev</a>
 		</span>
 	</body>
 </html>
