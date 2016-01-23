@@ -1,3 +1,9 @@
 [submodule "wiki"]
 	path = wiki
 	url = git@github.com:strandtentje/agwiki.git
+[submodule "login"]
+	path = login
+	url = git@github.com:strandtentje/aglogin.git
+[submodule "perm"]
+	path = perm
+	url = git@github.com:strandtentje/agperm.git
