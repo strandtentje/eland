@@ -1,1 +1,0 @@
-SELECT COUNT(voornaam) count FROM Persoon;
