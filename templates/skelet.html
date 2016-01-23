@@ -4,24 +4,28 @@
 		<title>Crash and Comrade</title>
 		<meta name="viewport" content="initial-scale=1">
 		<style type="text/css">
+		img { width: 80px; }
 			{% style %}
 		</style>
 	</head>
 	<body>
 		<div id="header">
-			<a href="/"><img src="/static/img/placeholder_logo.png" alt="Crash and Comrade"></a>
+			<a href="/">C&amp;C</a>
 			<a href="/register">Parttake</a>
-			<a href="/score">Score</a>
+			<a href="/score">Score</a>			
 		</div>
-		<div id="sponsors">
-			<img src="../static/img/quintor.png"></img>
-			<img src="../static/img/cover_logo.png"></img>
+		<div id="authentication">
+			{% register %}
+			{% logout %}
+			{% login %}
 		</div>
 		<div id="content">
 			{% content %}
 		</div>
-		<div id="credits">
+		<div id="credits">			
 			by <a href="http://www.borreh.nl">president Borbachev</a>
+			for <img src="/static/img/cover_logo.png"></img>
+			sponsored by <img src="/static/img/quintor.png"></img>
 		</span>
 	</body>
 </html>
