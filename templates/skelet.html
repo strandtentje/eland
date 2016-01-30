@@ -14,17 +14,22 @@
 			<a href="/score">Score</a>			
 		</div>
 		<div id="authentication">
-			{% register %}
-			{% logout %}
-			{% login %}
+			<span id="welcome">Welcome {% username %}</span>
+			<div id="authlinks">
+				{% register %}
+				{% logout %}
+				{% login %}
+				{% self %}
+				{% admin %}
+			</div>
 		</div>
 		<div id="content">
 			{% content %}
 		</div>
 		<div id="credits">			
 			by <a href="http://www.borreh.nl">president Borbachev</a>
-			for <img src="/static/img/cover_logo.png"></img>
-			sponsored by <img src="/static/img/quintor.png"></img>
-		</span>
+			for <img src="/static/img/cover_logo.png">
+			sponsored by <img src="/static/img/quintor.png">
+		</div>
 	</body>
 </html>
