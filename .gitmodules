@@ -7,6 +7,3 @@
 [submodule "perm"]
 	path = perm
 	url = git@github.com:strandtentje/agperm.git
-[submodule "skeleton"]
-	path = skeleton
-	url = git@github.com:strandtentje/agskeleton.git
