@@ -4,10 +4,16 @@ SELECT
 FROM
 	PersonView
 	LEFT JOIN 
-		PersonAttribute
+		(SELECT 
+			PersonAttribute.name, 
+            PersonAttribute.value
+		FROM 
+			PersonAttribute 
+		WHERE 
+			person = @person) AS PersonAttribute
 		ON PersonView.name = PersonAttribute.name
+        
 WHERE
-	view = @view 
-	AND person = @person
+	view = @view
 ORDER BY 
 	position;
