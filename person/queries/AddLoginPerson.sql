@@ -1,0 +1,3 @@
+INSERT INTO Person() VALUES();
+SELECT LAST_INSERT_ID() AS person;
+UPDATE Login SET person = LAST_INSERT_ID() WHERE id = @login;

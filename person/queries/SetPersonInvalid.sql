@@ -1,0 +1,1 @@
+UPDATE Person SET valid = 0 WHERE id = @person;
