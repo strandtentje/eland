@@ -1,4 +1,5 @@
 SELECT
+	id AS teamid,
 	title
 FROM 
 	Team
