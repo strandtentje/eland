@@ -13,7 +13,8 @@ FROM
 			FROM 
 				PersonAttribute 
 			WHERE 
-				person = @person
+				person = @person AND
+				obsolete = 0
 			GROUP BY
 				PersonAttribute.name) AS LatestAttribute
 			LEFT JOIN 
