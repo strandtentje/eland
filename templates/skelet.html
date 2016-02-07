@@ -1,36 +1,60 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Crash and Comrade</title>
+		<title>Crash and Compile: Red Alert</title>
 		<meta name="viewport" content="initial-scale=1">
 		<style type="text/css">
-		img { width: 80px; }
 			{% style %}
 		</style>
 	</head>
 	<body>
-		<div id="header">
-			<a href="/">C&amp;C</a>
-			<a href="/score">Score</a>			
-		</div>
-		<div id="authentication">
-			<span id="welcome">Welcome {% username %}</span>
-			<div id="authlinks">
+		<div id="navigation">
+			<p id="welcome">
+				Сколько лет, сколько зим, 
+				<span id="username">{% username %}</span>
+			</p>
+			<div id="links">
 				{% register %}
 				{% logout %}
 				{% login %}
 				{% self %}
-				{% admin %}
+				{% controlpanel %}
 				{% team %}
+				<a href="/score" id="scoreboard">Go to Score Board</a>
 			</div>
+		</div>
+		<div id="header">
+			<div id="hbg"></div>
+			<a id="logo" href="/">
+				<div id="cenc">
+					<span id="lcrash">Crash</span>
+					<span id="lamp">&amp;</span>
+					<span id="lcompile">Compile</span>
+				</div>
+				<div id="ra">
+					<span id="lred">Red</span>
+					<span id="lalert">Alert</span>
+				</div>
+			</a>			
 		</div>
 		<div id="content">
 			{% content %}
 		</div>
 		<div id="credits">			
-			by <a href="http://www.borreh.nl">president Borbachev</a>
-			for <img src="/static/img/cover_logo.png">
+			by <a href="http://www.borreh.nl">president Borbachev</a><br>
+			for <img src="/static/img/cover_logo.png"><br>
 			sponsored by <img src="/static/img/quintor.png">
 		</div>
+		<script type="text/javascript">
+			{% script %}
+			$(document).ready(function() {
+				$("#links").addClass("notthere");
+				$("#welcome").prepend('<div id="menuopen">menu</div>');
+				$("#menuopen").click(function() {
+					$("#links").toggleClass("notthere");
+				});
+				$("#menuopen").text("");
+			});
+		</script>
 	</body>
 </html>
