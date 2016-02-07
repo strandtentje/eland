@@ -177,6 +177,8 @@ input[type="submit"] {
 	#navigation {
 		line-height: 1cm;
 		text-align: center;
+		background: white;
+		color: black;
 	}
 
 	#links {
@@ -185,6 +187,7 @@ input[type="submit"] {
 
 	#links a, #welcome {
 		display: inline;
+		color: black;
 	}
 
 	#username {
@@ -249,6 +252,10 @@ div#hbg {display: none;}
 		-ms-transform: rotate(30deg);
 		-o-transform: rotate(30deg);
 		transform: rotate(30deg);
+	}
+
+	div#content {
+		min-height: calc(100vh - 15vw - 5.84cm);
 	}
 
 	a#logo {
