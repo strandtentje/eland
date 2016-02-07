@@ -1,5 +1,3 @@
-#credits img { width: 80px; }
-
 @font-face {
   font-family: 'RedOctober-Fat';
   src: url('/static/fonts/RedOctober-Fat.eot?#iefix') format('embedded-opentype'),  url('/static/fonts/RedOctober-Fat.woff') format('woff'), url('/static/fonts/RedOctober-Fat.ttf')  format('truetype'), url('/static/fonts/RedOctober-Fat.svg#RedOctober-Fat') format('svg');
@@ -7,39 +5,61 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('/static/fonts/fontawesome-webfont.eot?v=4.5.0');
+  src: url('/static/fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'), url('/static/fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'), url('/static/fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'), url('/static/fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'), url('/static/fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Playfair Display'), local('PlayfairDisplay-Regular'), url('/static/fonts/playfair-display.woff2') format('woff2');
+}
+
+#credits img { width: 80px; }
+
+html, body {
+	padding: 0; margin: 0; font-family: 'Playfair Display';
+}
+
+#navigation, #header {
+    background: #D32;
+    color: white;
+}
+
 #header {
-	text-align: center;
+	text-align: center;padding-bottom: 0.3cm;
+}
+
+#content h1, #content .summary {
+   padding: 0px;
+}
+
+#content {
+	padding-bottom: 0.4cm;
+}
+
+#content h1 {
+	margin: 0;
+	padding-top: 0.4cm;
 }
 
 a#logo {
+	line-height: 102%;
+	padding-top: 2px;
 	display: block;
 	width: 100%;
 	text-decoration: none;	
 	font-family: 'RedOctober-Fat';
 	font-size: 20pt;
+	font-size: 6vw;
 	text-align: center;
 	position: relative;
 	z-index: 10;
-}
-
-a#logo:after {
-	content: '.';
-	display: block;
-	width: 6cm;
-	height: 1.5cm;
-	position: absolute;
-	left: calc(50% - 3cm);
-	font-size: 0;
-	top: 0;
-	z-index: -10;
-	box-shadow: 0px 0px 5px black;
-	background: repeating-linear-gradient(
-    0deg,
-    #999 0px,
-    #999 1px,
-    #ccc 2px,
-    #ccc 3px
-  	);
 }
 
 a#logo span {
@@ -51,41 +71,188 @@ a#logo span {
 }
 
 #cenc {
-	color: #ee6;
+	color: white;
 }
 
 #ra {
-	color: #e33;
-}
-
-a#scoreboard {	
-	padding: 3px 6px;
 	color: white;
-	font-weight: bold;
-	box-shadow: 0px 0px 5px black;
-	text-decoration: none;
-	font-family: sans-serif;
-	text-shadow: 1px 1px 3px #333;
-
-	background: repeating-linear-gradient(
-    0deg,
-    #ee6 0px,
-    #ee6 1px,
-    #aa0 2px,
-    #aa0 3px
-  	);
 }
 
-#authentication {
-	margin-top: 1cm;
-	width: 11cm;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#welcome {
+#links a, #welcome {	
 	display: block;
-	width: 100%;
-	
+	padding: 9px 6px;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	width: 8cm;
+	margin: auto;
+	text-align: left;
+	white-space: nowrap;
 }
 
+#username {
+	display: block;
+	text-align: center;
+}
+
+#links a:before {
+	width: 0.8cm;
+	text-align: center;	
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	padding-right: 4px;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;	
+}
+
+.notthere {
+	display: none;
+}
+
+div#content {
+	font-size: 13.5pt;
+	line-height: 150%;
+}
+
+div#content, div#credits {
+    margin: 0 0.4cm;
+}
+
+#controlpanellink:before { content: "\f085";}
+#signinlink:before { content: "\f090";}
+#signoutlink:before { content: "\f08b";}
+#signuplink:before { content: "\f234";}
+#profilelink:before { content: "\f007";}
+#teamlink:before { content: "\f0c0";}
+#scoreboard:before { content: "\f0ae"; }
+#menuopen {display: inline-block;}
+#menuopen:before {
+	width: 0.8cm;
+	text-align: center;	
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;	
+	content: "\f0c9";
+	cursor: pointer;
+}
+
+label {
+	text-align: center;
+}
+
+form {
+	padding: 0.5cm;
+}
+
+input, label {
+	width: 6cm;
+	display: block;
+	margin: auto;
+	font-family: 'Playfair Display';
+}
+
+input {
+	font-size: 16pt;
+}
+
+input[type="submit"] {
+	width: auto;
+	margin-top: 0.4cm;
+}
+
+@media(min-width: 300pt) {
+	.notthere {
+		display: inline;
+	}
+
+	#menuopen {
+		display: none;
+	}
+
+	#navigation {
+		line-height: 1cm;
+		text-align: center;
+	}
+
+	#links {
+		display: inline-block;
+	}
+
+	#links a, #welcome {
+		display: inline;
+	}
+
+	#username {
+		display: inline;
+		text-align: left;
+	}
+
+	div#content {
+		min-height: calc(100vh - 12vw - 5.84cm);
+	}
+
+	div#content, div#credits {
+		width: 17cm;
+    	margin: 0 auto;
+	}
+
+	div#credits {
+		display: block;
+		box-sizing: border-box;
+		text-align: right;
+		width: 100%;
+		padding-top: 1cm;
+		min-height: 4cm;
+		padding-right: 14vw;
+	}
+}
+
+div#hbg {display: none;}
+
+@media(min-width: 500pt) {
+
+	div#header {
+		height: 8vw;
+		margin-bottom: 5vw;
+		margin-top: 2vw;
+		box-shadow: 1px 1px 3px #333;
+		background-image: url('/static/img/rustpat.gif');
+		position: relative;
+	}
+
+	div#hbg {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	div#hbg:before {
+		width: 100%;
+		height: 1000%;
+		content: '.';
+		display: block;
+		position: absolute;
+		top: -300%;
+		left: 0;
+		background: url('/static/img/rustmask.gif') 0 0 repeat;
+		-webkit-transform: rotate(30deg);
+		-moz-transform: rotate(30deg);
+		-ms-transform: rotate(30deg);
+		-o-transform: rotate(30deg);
+		transform: rotate(30deg);
+	}
+
+	a#logo {
+		position: relative;
+		top: -1.5vw;
+	}
+}
