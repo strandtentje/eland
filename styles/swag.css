@@ -150,8 +150,7 @@ label {
 }
 
 .field input, .field label {
-	width: 50vw;
-	max-width:; 9cm;
+	width: 100%;
 	min-width: 4cm; 
 	display: block;
 	margin: auto;
@@ -320,4 +319,14 @@ form.personal input {
 	background: black;
 	color: white;
 	font-size: 19pt;
+}
+
+.token {
+	font-family: monospace;
+	background: #444;
+	color: #eee;
+}
+
+#teamlist {
+	border: solid 2px black;
 }
