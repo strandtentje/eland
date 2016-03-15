@@ -1,9 +1,9 @@
 SELECT 
-	Field.`name`,
+	PersonView.`name`,
     PersonAttribute.`value`
-FROM Field
+FROM PersonView
 	JOIN PersonAttribute 
-      ON Field.`name` = PersonAttribute.`name`
+      ON PersonView.`name` = PersonAttribute.`name`
 WHERE
-	person = @person AND obsolete = 0
-ORDER BY priority;
+	person = @person AND obsolete = 0 AND `view` = "confirmationmail"
+ORDER BY position;

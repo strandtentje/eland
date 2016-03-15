@@ -1,0 +1,6 @@
+INSERT INTO Field(name,`text`,priority)
+VALUES("firstname","First name",0)
+,("lastname","Last name",1)
+,("mailto","E-mail address",2)
+,("phone","Phone number",3)
+,("token","Team token",4)
