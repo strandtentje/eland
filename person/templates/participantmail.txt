@@ -1,0 +1,12 @@
+Greetings Comrade,
+
+Your registration for Compile and Crash was altered! 
+We've registered the following information in our great base 
+of data, please check for failures and notify the beloved 
+organisation in a timely fashion if something isn't correct:
+
+╔═★═★═ Your Information ═★═★══╾┈
+{% attributes %}╚═★═★═★═★═╾┈
+
+Kind regards,
+The Cover LANcee and Quintor

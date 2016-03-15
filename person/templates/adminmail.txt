@@ -1,0 +1,3 @@
+The following mail was sent to {% toparticipant.to %}
+
+{% toparticipant %}
