@@ -1,0 +1,15 @@
+<tr>
+	{% team %}
+	<td>
+		<form method="post" action="{% baseurl %}/enter">
+			<input type="hidden" name="id" value="{% id %}">
+			<input type="submit" value="↑">
+		</form>
+	</td>
+	<td>
+		<form method="post" action="{% baseurl %}/purge">
+			<input type="hidden" name="id" value="{% id %}">
+			<input type="submit" value="x">
+		</form>
+	</td>
+</tr>

@@ -1,0 +1,1 @@
+UPDATE Team SET entered=NOW() WHERE id=@id;

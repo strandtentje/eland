@@ -1,8 +1,22 @@
+<span class="title">Teams in-game</span>
 <table id="teamlist">
 	<tr>
 		<th>Title</th>
 		<th>Token</th>
 		<th>Members</th>
+		<th>To staging</th>
 	</tr>
-	{% items %}
+	{% entered %}
+</table>
+
+<span class="title">Teams on staging</span>
+<table id="teamlist">
+	<tr>
+		<th>Title</th>
+		<th>Token</th>
+		<th>Members</th>
+		<th>Enter game</th>
+		<th>Purge</th>
+	</tr>
+	{% staged %}
 </table>
