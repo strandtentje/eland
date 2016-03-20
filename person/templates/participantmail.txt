@@ -1,4 +1,4 @@
-Greetings Comrade,
+Greetings Comrade {% username %},
 
 Your registration for Compile and Crash was altered! 
 We've registered the following information in our great base 
