@@ -1,0 +1,1 @@
+INSERT INTO `UserGroup` VALUES (1,'guest','guest',NULL,NULL);
