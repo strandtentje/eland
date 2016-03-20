@@ -1,1 +1,0 @@
-UPDATE Team SET naam=@naam WHERE id=@id;
