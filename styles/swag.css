@@ -301,25 +301,6 @@ div#hbg {display: none;}
 	text-align: left;
 }
 
-form.personal fieldset {
-	border: none;
-	text-align: center;
-}
-
-form.personal legend {
-	display: block;
-	width: 100%;
-	text-align: center;
-}
-
-form.personal input {
-	border: none;
-	border-radius: 0.45cm;
-	padding: 0.25cm;
-	background: black;
-	color: white;
-	font-size: 19pt;
-}
 
 .token {
 	font-family: monospace;
