@@ -1,0 +1,24 @@
+<style type="text/css">
+#importselect {
+	max-height: 640px;
+	overflow-y: scroll;
+	border: solid 1px black;
+}
+</style>
+<div id="importselect" style="display: none;">
+	{% list %}
+</div>
+<script type="text/javascript">
+$("#importselect a").click(function(event) {
+	event.stopPropagation();
+	event.preventDefault();
+	$.get($(this).attr('href'), function(data) {
+		editor.setValue(editor.getValue() + data);
+	});
+});
+
+$('<button id="extend_importselect">Select file to import</button>').insertBefore("#importselect");
+$("#extend_importselect").click(function() {
+	$('#importselect').toggle();
+});
+</script>
