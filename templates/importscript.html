@@ -4,6 +4,8 @@ $(document).ready(function() {
 	$.get('/import/' + hash, function(data) {
 		editor.setValue(editor.getValue() + data);
 	});
-	$("#articleurl").val(hash.replace(/[^a-zA-Z 0-9]+/g,''));
+	if ($("#articleurl").val().length == 0) {
+		$("#articleurl").val(hash.replace(/[^a-zA-Z 0-9]+/g,''));
+	}
 });
 </script>
