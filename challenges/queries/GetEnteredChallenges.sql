@@ -3,4 +3,6 @@ SELECT
 FROM 
 	Prestatie
 WHERE
-	NOW() >= starts AND (ISNULL(ends) OR ends > NOW());
+	NOW() >= starts AND (ISNULL(ends) OR ends > NOW())
+ORDER BY 
+	starts;
