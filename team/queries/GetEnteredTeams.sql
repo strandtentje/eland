@@ -15,4 +15,4 @@ FROM
 WHERE
 	(ISNULL(Team.obsolete) OR Team.obsolete > NOW()) AND Team.entered < NOW()
 GROUP BY Team.id
-ORDER BY SUM(Behaald.waarde) DESC;
+ORDER BY SUM(Behaald.waarde * IFNULL(Prestatie.multiplier, 1)) DESC;
