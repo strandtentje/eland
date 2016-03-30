@@ -1,1 +1,1 @@
-SELECT DISTINCT waarde FROM Behaald;
+SELECT DISTINCT waarde FROM Behaald ORDER BY waarde ASC;
