@@ -1,0 +1,11 @@
+<script type="text/javascript">
+$(document).ready(function() {
+	var hash = location.hash.replace('#', ''); 
+	$.get('/import/' + hash, function(data) {
+		editor.setValue(editor.getValue() + data);
+	});
+	if ($("#articleurl").val().length == 0) {
+		$("#articleurl").val(hash.replace(/[^a-zA-Z 0-9]+/g,''));
+	}
+});
+</script>

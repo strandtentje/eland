@@ -1,0 +1,27 @@
+<h2>Currently active challenges</h2>
+<table width="100%">
+	<tr>
+		<th>Title</th>
+		<th>De-publish</th>
+	</th>
+	{% entered %}
+</table>
+
+<h2>Staged challenges</h2>
+<table width="100%">
+	<tr>
+		<th>Title</th>
+		<th>Publish</th>
+		<th>Purge</th>
+	</tr>
+	{% staged %}
+</table>
+
+<h2>Stagable Wiki Articles</h2>
+<table>
+	<tr>
+		<th>Wiki url (ro)</th>
+		<th>Displayed name</th>
+		<th>Stage as challenge</th>
+	{% stagables %}
+</table>

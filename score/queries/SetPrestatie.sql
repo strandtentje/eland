@@ -1,1 +1,0 @@
-UPDATE Prestatie SET naam=@naam, slug=@slug WHERE id=@id;

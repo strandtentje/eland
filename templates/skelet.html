@@ -6,12 +6,16 @@
 		<style type="text/css">
 			{% style %}
 		</style>
+		<script type="text/javascript">
+			{% script %}
+		</script>
 	</head>
 	<body>
 		<div id="navigation">
 			<p id="welcome">
 				Сколько лет, сколько зим, 
 				<span id="username">{% username %}</span>
+				{% registrationstatus %}
 			</p>
 			<div id="links">
 				{% register %}
@@ -20,7 +24,8 @@
 				{% self %}
 				{% controlpanel %}
 				{% team %}
-				<a href="/score" id="scoreboard">Go to Score Board</a>
+				{% score %}
+				{% wikilist %}
 			</div>
 		</div>
 		<div id="header">
@@ -46,7 +51,6 @@
 			sponsored by <img src="/static/img/quintor.png">
 		</div>
 		<script type="text/javascript">
-			{% script %}
 			$(document).ready(function() {
 				$("#links").addClass("notthere");
 				$("#welcome").prepend('<div id="menuopen">menu</div>');
