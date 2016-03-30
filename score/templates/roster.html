@@ -5,18 +5,25 @@
 		{% styleinjection %}
 		</style>
 		<title>scodaboda</title>
-		<meta http-equiv="refresh" content="5">
+		<noscript>
+			<meta http-equiv="refresh" content="5">
+		</noscript>
 	</head>
 	<body>
-		<table>
-			<tr>
-				<td></td>
-				{% challenges %}
-			</tr>
-			{% ranking %}
-		</table>
+		<div id="scores">
+			<table>
+				<tr>
+					<td></td>
+					{% challenges %}
+				</tr>
+				{% ranking %}
+			</table>
+		</div>
 		<script type="text/javascript">
 		{% jquery %}
+		 setInterval(function () {
+		     $( "#scores" ).load( "/score table" );
+		 },400);
 		{% scriptinjection %}
 		</script>
 	</body>

@@ -10,5 +10,5 @@ FROM
 			Team.id = Behaald.team
 WHERE
 	(ISNULL(Team.obsolete) OR Team.obsolete > NOW()) AND Team.entered < NOW()
-GROUP BY Behaald.team
+GROUP BY Team.id
 ORDER BY SUM(Behaald.waarde) DESC;
