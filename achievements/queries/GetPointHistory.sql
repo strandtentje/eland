@@ -1,0 +1,1 @@
+SELECT DISTINCT waarde FROM Behaald;
