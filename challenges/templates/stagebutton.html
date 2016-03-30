@@ -1,0 +1,11 @@
+<tr>
+	<td>
+		{% challenge %}
+	</td>
+	<td>
+		<form method="post" action="{% baseurl %}/unenter">
+			<input type="hidden" name="id" value="{% id %}">
+			<input type="submit" value="↓">
+		</form>
+	</td>
+</tr>

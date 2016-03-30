@@ -167,6 +167,18 @@ input[type="submit"] {
 	margin-top: 0.4cm;
 }
 
+table input[type="submit"] {
+	margin-top: 0;
+}
+
+td form {
+	text-align: center;
+}
+
+tr:nth-child(2n + 1) {
+	background: #ddd;
+}
+
 @media(min-width: 300pt) {
 	.notthere {
 		display: inline;
