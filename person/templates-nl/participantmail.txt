@@ -1,0 +1,10 @@
+Dag {% username %},
+
+De volgende ingevoerde gegevens zijn geregistreerd:
+
+{% attributes %}
+
+Als hier iets niet in de haak is, dan vernemen wij dat graag.
+
+Groet,
+experty
