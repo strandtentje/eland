@@ -222,7 +222,7 @@ CREATE TABLE `Prestatie` (
   `docs` text,
   `starts` datetime DEFAULT NULL,
   `ends` datetime DEFAULT NULL,
-  `multiplier` int(11) DEFAULT NULL,
+  `multiplier` decimal(19,4) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
