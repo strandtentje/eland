@@ -112,23 +112,64 @@ div#content, div#credits {
 	cursor: pointer;
 }
 
-label {
+form.personal {
+	margin: 0 0.5cm;
+}
+
+span.formtitle {
+	box-sizing: border-box;
+	margin: 1cm;
+	line-height: 300%;
+}
+
+.field label, .field input {
 	display: block;
 }
 
-.field label {
-	text-align: center;
+.field input {
+	margin-left: 0.5cm;
+	width: 6cm;
 }
 
-.field input, .field label {
-	width: 100%;
-	min-width: 4cm;
-	display: block;
-	margin: auto;
-	font-family: 'Playfair Display';
+.failure .hint {
+	color: red;
+	margin-left: 0.5cm;
 }
+
+@media(min-width: 500px) {
+	label {
+		display: block;
+	}
+
+	.field label {
+		text-align: right;
+	}
+
+	.field input, .field label {
+		min-width: 4cm;
+		display: inline-block;
+		margin: auto;
+	}
+
+	.failure {
+		text-align: left;
+	}
+
+	.failure .field {
+		text-align: left;
+	}
+
+	.failure .hint {
+		color: red;
+		text-align: left;
+		padding-left: 4.2cm;
+		margin-left: 0;
+	}
+}
+
 
 input[type="submit"] {
+	display: block;
 	width: auto;
 	margin-top: 0.4cm;
 }
@@ -219,9 +260,14 @@ div#hbg {display: none;}
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	position: absolute;
-	left: 0;
-	bottom: 0;
+}
+
+@media(min-width: 500px) {
+	.fading.message + .field label:before,
+	.failure .field label:before {
+		left: initial;
+		right: 0;
+	}
 }
 
 .neutral.message + .field label:before {
@@ -235,14 +281,6 @@ div#hbg {display: none;}
 .negative.message + .field label:before,
 .failure .field label:before {
 	content: '\f00d';
-}
-
-.failure {
-	text-align: center;
-}
-
-.failure .field {
-	text-align: left;
 }
 
 
