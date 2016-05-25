@@ -1,0 +1,29 @@
+<h2>Momenteel actieve uitdagingen</h2>
+<table width="100%">
+	<tr>
+		<th>Titel</th>
+		<th>Deactiveren</th>
+	</th>
+	{% entered %}
+</table>
+
+<h2>Uitdagingen welke klaar staan</h2>
+<table width="100%">
+	<tr>
+		<th>Titel</th>
+		<th>Activeren</th>
+		<th>Weghalen</th>
+	</tr>
+	{% staged %}
+</table>
+
+<h2>Wikis klaar te zetten als Uitdaging</h2>
+<table>
+	<tr>
+		<th>Wiki url (ro)</th>
+		<th>Getoonde naam</th>
+		<th>Weegwaarde</th>
+		<th>Klaarzetten</th>
+	</tr>
+	{% stagables %}
+</table>

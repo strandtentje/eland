@@ -1,0 +1,16 @@
+<tr>
+	<form action="{% baseurl %}/stage" method="post">
+		<td>
+			<input type="text" value="{% url %}" name="name" readonly>
+		</td>
+		<td>
+			<input type="text" value="{% title %}" name="title">
+		</td>
+		<td>
+			<input type="number" step="any" value="{% multiplier %}" name="multiplier">
+		</td>
+		<td>
+			<input type="submit" value="klaarzetten">
+		</td>
+	</form>
+</tr>
