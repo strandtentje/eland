@@ -1,1 +1,1 @@
-INSERT INTO Prestatie(name, title) VALUES(@name, @title);
+INSERT INTO Prestatie(name, title, multiplier) VALUES(@name, @title, @multiplier);
