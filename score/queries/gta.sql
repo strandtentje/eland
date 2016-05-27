@@ -1,5 +1,8 @@
 SELECT 
-	id, name, title, IFNULL(score, 0) AS score
+	id,
+	name,
+	title,
+	IFNULL(score, 0) AS score
 FROM Prestatie
 	LEFT JOIN (SELECT 
 			SUM(Behaald.waarde) AS score, prestatie
