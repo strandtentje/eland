@@ -4,5 +4,5 @@ FROM
 	PersonView
 WHERE
 	view LIKE @view
-ORDER BY 
+ORDER BY
 	position;
