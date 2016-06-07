@@ -311,3 +311,7 @@ code {
 	background: #ddd;
 	white-space: pre;
 }
+
+.valid0 form {
+	display: none;
+}
