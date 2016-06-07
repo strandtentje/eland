@@ -1,5 +1,5 @@
 SELECT
-	PersonView.`name`,
+	PersonView.`title`,
     PersonAttribute.`value`,
     locale
 FROM PersonView
