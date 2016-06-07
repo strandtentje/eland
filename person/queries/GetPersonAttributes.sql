@@ -1,9 +1,13 @@
-SELECT 
+SELECT
 	PersonView.`name`,
-    PersonAttribute.`value`
+    PersonAttribute.`value`,
+    locale
 FROM PersonView
-	JOIN PersonAttribute 
+	JOIN PersonAttribute
       ON PersonView.`name` = PersonAttribute.`name`
 WHERE
-	person = @person AND obsolete = 0 AND `view` = "confirmationmail"
+	person = @person
+    AND obsolete = 0
+    AND `view` = "confirmationmail"
+    AND locale = @locale
 ORDER BY position;
