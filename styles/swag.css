@@ -315,3 +315,7 @@ code {
 .valid0 form {
 	display: none;
 }
+
+.articledelete {
+	display: none;
+}
