@@ -319,3 +319,7 @@ code {
 .articledelete {
 	display: none;
 }
+
+.happy.message {
+	color: green;
+}
