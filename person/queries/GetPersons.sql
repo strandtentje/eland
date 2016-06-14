@@ -2,4 +2,6 @@ SELECT
 	id AS person,
 	valid
 FROM
-	Person;
+	Person
+WHERE
+	valid = 1;
