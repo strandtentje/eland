@@ -1,8 +1,5 @@
 <tr>
 	{% cells %}
-	<td>
-		{% valid %}
-	</td>
     <td class="valid{% valid %}">
         <form method="post" action="{% baseurl %}/confirm">
             <input type="hidden" name="person" value="{% person %}">
