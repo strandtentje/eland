@@ -1,14 +1,17 @@
 <div class="team">
-	<span class="title">
+	<div class="title">
 		Teamnaam:
 		{% form %}
-	</span>
-    Teamleden:
-	{% members %}	
-    <p>
+	</div>
+    <div class="members">
+        Teamleden:
+	   {% members %}
+    </div>
+    <div class="jointoken">
         Geef het volgende wachtwoord door aan je andere teamleden:
     	<span class="token">
     		{% token %}
     	</span>
-    </p>
+    </div>
+
 </div>
