@@ -332,5 +332,10 @@ code {
 
 #filetable input[type="submit"] {
 	display: inline;
-	
+
+}
+
+textarea.linkholder {
+	line-height: 12pt;
+	height: 12pt;
 }
