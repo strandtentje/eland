@@ -323,3 +323,14 @@ code {
 .happy.message {
 	color: green;
 }
+
+.controlpanelframe {
+    width: calc(100vw - 16px);
+    position: absolute;
+    left: 8px;
+}
+
+#filetable input[type="submit"] {
+	display: inline;
+	
+}
