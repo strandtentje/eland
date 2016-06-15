@@ -339,3 +339,10 @@ textarea.linkholder {
 	line-height: 12pt;
 	height: 12pt;
 }
+
+#usefullinkbox,
+#usefullinkbox li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
