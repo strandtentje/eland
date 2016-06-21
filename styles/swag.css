@@ -346,3 +346,5 @@ textarea.linkholder {
 	margin: 0;
 	padding: 0;
 }
+
+#filetable form { display: inline; }
